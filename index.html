@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пульт Прокси</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; background: #121212; color: #fff; text-align: center; padding: 30px 20px; }
+        h2 { color: #007aff; margin-bottom: 5px; }
+        .desc { color: #8e8e93; font-size: 14px; margin-bottom: 30px; }
+        .btn { display: block; width: 90%; max-width: 320px; margin: 18px auto; padding: 18px; border: none; border-radius: 16px; font-size: 16px; font-weight: bold; cursor: pointer; transition: 0.2s; text-decoration: none; }
+        .btn-wifi { background: #34c759; color: white; }
+        .btn-lte { background: #007aff; color: white; }
+        .btn-off { background: #ff3b30; color: white; }
+        .btn:active { transform: scale(0.97); opacity: 0.9; }
+    </style>
+</head>
+<body>
+
+    <h2>⚙️ Пульт Управления Сетью</h2>
+    <div class="desc">Быстрое переключение режимов обхода</div>
+
+    <!-- Кнопки-переключатели, которые ведут сразу в нужные настройки Айфона -->
+    <a href="prefs:root=WIFI" class="btn btn-wifi">🟢 Включить Дома (Wi-Fi)</a>
+    <a href="prefs:root=MOBILE_DATA_SETTINGS_ID" class="btn btn-lte">🔵 Включить на Улице (LTE)</a>
+    <a href="prefs:root=WIFI" class="btn btn-off">🔴 Полностью Выключить</a>
+
+</body>
+</html>
